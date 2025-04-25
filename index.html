@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hues of Old Malaya | A Colourful Rebirth with AI</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Hues of Old Malaya Logo" class="logo-image">
+                Hues of Old Malaya
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span id="typewriter" class="gradient-text"></span>
+                    <span class="static-text">with AI Colorization.</span> 
+                </h1>
+                <p class="hero-subtitle">Witness the rebirth of Malaysia's rich history as our AI breathes life into monochrome memories. Through the fusion of deep learning and artistry, we transform black-and-white photographs into vibrant, authentic recollections of the past.</p>
+                <a href="#gallery" class="btn btn-primary">View Gallery</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-slider">
+                <div class="slider-container">
+                    <img src="imgs_bw/malaysia11.jpg" alt="Black and white photo before colorization" class="slider-image before">
+                    <img src="imgs_color/malaysia11.jpg" alt="Colorized photo" class="slider-image after">
+                </div>
+                <input type="range" min="0" max="100" value="50" class="slider" id="slider">
+                <div class="slider-button"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About the Project</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hues of Old Malaya is a groundbreaking initiative that merges the precision of artificial intelligence with the beauty of historical preservation. Our advanced neural networks are trained to understand the essence of Malaysia's cultural heritage, recoloring black-and-white photographs with hues that echo the vibrancy of the past.
+                        </p>
+                        <p>
+                            From bustling streets of colonial Malaya to serene kampung landscapes, our AI ensures every detail is revived with authenticity and care. This is more than recolorization—it's a journey through time, where technology meets tradition to rekindle the soul of history.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="placeholder-process.jpg" alt="Colorization process visualization" class="placeholder-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology" class="section tech-section">
+            <div class="container">
+                <h2 class="section-title">Technology Behind Hues of Old Malaya</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Deep Learning</h3>
+                        <p>
+                            At the heart of Hues of Old Malaya lies a custom-built GAN (Generative Adversarial Network) architecture, designed to analyze and predict colors with remarkable accuracy. Our AI doesn’t just add color—it interprets the context, ensuring every shade reflects the historical and cultural essence of Malaysia.
+                        </p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Computer Vision</h3>
+                        <p>With cutting-edge computer vision techniques, we preserve intricate details, from the delicate patterns of batik to the vibrant tones of traditional attire. Optimized for speed and precision, our technology delivers breathtaking results in moments, making history accessible to all.</p>
+                    </div>
+                </div>
+                <div class="tech-image">
+                    <img src="placeholder-architecture.jpg" alt="Neural network architecture diagram" class="placeholder-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+            <h2 class="section-title">Colorization Gallery</h2>
+            <p class="section-subtitle" style="text-align: center;">Drag the slider to see the difference!</p>
+            <div class="gallery-container">
+            <div class="gallery-scroll">
+            <div class="gallery-item">
+                <div class="image-comparison">
+                <img src="imgs_bw/malaysia2.jpg" alt="Cityscape before colorization" class="before">
+                <img src="imgs_color/malaysia2.jpg" alt="Cityscape after colorization" class="after">
+                <input type="range" min="0" max="100" value="50" class="slider" id="gallery-slider-2">
+                </div>
+                <div class="image-description">
+                <h3>Kuala Lumpur</h3>
+                <p>circa 1950: Sultan Samad Building, Kuala Lumpur, Malaysia.</p>
+                <p>Photo by Three Lions (Getty Images).</p> 
+                <p><a href="imgs_color/malaysia2.jpg" download><i class="fas fa-download"></i>  Download Colorized Image</a></p>
+            </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-comparison">
+                <img src="imgs_bw/malaysia10.jpg" alt="Before" class="before">
+                <img src="imgs_color/malaysia10.jpg" alt="After" class="after">
+                <input type="range" min="0" max="100" value="50" class="slider">
+                </div>
+                <div class="image-description">
+                <h3>Malaysian Shawl</h3>
+                <p>circa 1955: A Malaysian woman wearing a traditional woven sun hat and woven shawl.</p>
+                <p>Photo by Three Lions (Getty Images).</p>      
+                <p><a href="imgs_color/malaysia10.jpg" download><i class="fas fa-download"></i>  Download Colorized Image</a></p>
+            </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-comparison">
+                <img src="imgs_bw/malaysia6.jpg" alt="War photo before colorization" class="before">
+                <img src="imgs_color/malaysia6.jpg" alt="War photo after colorization" class="after">
+                <input type="range" min="0" max="100" value="50" class="slider" id="gallery-slider-4">
+                </div>
+                <div class="image-description">
+                <h3>Lennox-Boyd And Tunku Abdul Rahman</h3>
+                <p>8th February 1956: British Conservative politician Alan Lennox-Boyd shakes hands with Tunku Abdul Rahman after the final signing ceremony of the Federation of Malaya Constitutional Conference at Lancaster House, London.</p>
+                <p>Photo by Fred Ramage (Getty Images).</p>     
+                <p><a href="imgs_color/malaysia6.jpg" download><i class="fas fa-download"></i>  Download Colorized Image</a></p>
+            </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-comparison">
+                <img src="imgs_bw/malaysia8.jpg" alt="Historical photo before colorization" class="before">
+                <img src="imgs_color/malaysia8.jpg" alt="Historical photo after colorization" class="after">
+                <input type="range" min="0" max="100" value="50" class="slider" id="gallery-slider-1">
+                </div>
+                <div class="image-description">
+                <h3>Sultan Of Kedah And Princess Tunkusakeah</h3>
+                <p>16th April 1951: The Sultan Of Kedah and his daughter Princess Tunkusakeah arriving in Tilbury to meet his niece Princess Zabriah and her fiance, England.</p>
+                <p>Photo by Edward Miller (Getty Images).</p>    
+                <p><a href="imgs_color/malaysia8.jpg" download><i class="fas fa-download"></i>  Download Colorized Image</a></p>
+            </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-comparison">
+                <img src="imgs_bw/malaysia9.jpg" alt="Historical photo before colorization" class="before">
+                <img src="imgs_color/malaysia9.jpg" alt="Historical photo after colorization" class="after">
+                <input type="range" min="0" max="100" value="50" class="slider" id="gallery-slider-1">
+                </div>
+                <div class="image-description">
+                <h3>Borgward Lloyd Autos - Lloyd 600</h3>
+                <p>circa 1950: Lloyd 600 car produced by Germany car manufacturer Lloyd Motor Works, at a signpost in Malaysia.</p>
+                <p>Photo by ullstein bild (Getty Images).</p>    
+                <p><a href="imgs_color/malaysia15.jpg" download><i class="fas fa-download"></i>  Download Colorized Image</a></p>
+            </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-comparison">
+                <img src="imgs_bw/malaysia13.jpg" alt="War photo before colorization" class="before">
+                <img src="imgs_color/malaysia13.jpg" alt="War photo after colorization" class="after">
+                <input type="range" min="0" max="100" value="50" class="slider" id="gallery-slider-4">
+                </div>
+                <div class="image-description">
+                <h3>Latex Checks</h3>
+                <p>circa 1950: A rubber industry worker carrying out a quality check on bottles of latex taken from various test trees in Malaysia.</p>
+                <p>Photo by Horace Bristol (Getty Images).</p>     
+                <p><a href="imgs_color/malaysia13.jpg" download><i class="fas fa-download"></i>  Download Colorized Image</a></p>
+            </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-comparison">
+                <img src="imgs_bw/malaysia14.jpg" alt="War photo before colorization" class="before">
+                <img src="imgs_color/malaysia14.jpg" alt="War photo after colorization" class="after">
+                <input type="range" min="0" max="100" value="50" class="slider" id="gallery-slider-4">
+                </div>
+                <div class="image-description">
+                <h3>Rubber Cutter</h3>
+                <p>circa 1950: A woman trimming the edges off a sheet of latex in the Malaysian rubber industry.</p>
+                <p>Photo by Three Lions (Getty Images).</p>     
+                <p><a href="imgs_color/malaysia14.jpg" download><i class="fas fa-download"></i>  Download Colorized Image</a></p>
+            </div>
+            </div>
+            </div>
+                
+            </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Have questions or want to collaborate?</h3>
+                        <p>
+                            Have a piece of history waiting to be revived? Collaborate with us to bring Malaysia’s past to life. Whether you're an archivist, historian, or enthusiast, let’s work together to preserve and celebrate the vibrant legacy of our nation.
+                        </p>
+                        <p>
+                            Reach out to us and be part of this journey where AI meets artistry, and history is painted anew.
+                        </p>
+                        <div class="contact-details">
+                            <p>📧 <a href="mailto:contact@autocolor.ai">contact@autocolor.ai</a></p>
+                            <p>🐦 <a href="https://twitter.com/autocolor" target="_blank">@autocolor</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Hues of Old Malaya</a>
+                    <p>Bringing the past to life with AI colorization technology.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hues of Old Malaya by Fakhrul Fauzi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
