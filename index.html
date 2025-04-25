@@ -42,7 +42,7 @@
                     <span id="typewriter" class="gradient-text"></span>
                     <span class="static-text">with AI Colorization.</span> 
                 </h1>
-                <p class="hero-subtitle">Witness the rebirth of Malaysia's rich history as our AI breathes life into monochrome memories. Through the fusion of deep learning and artistry, we transform black-and-white photographs into vibrant, authentic recollections of the past.</p>
+                <p class="hero-subtitle">Witness the rebirth of Malaysia's rich history as our AI breathes life into monochrome memories. Through the fusion of deep learning and artistry, powered by a model inspired by <a href="https://github.com/piddnad/DDColor" target="_blank">DDColor</a>, we transform black-and-white photographs into vibrant, authentic recollections of the past.</p>
                 <a href="#gallery" class="btn btn-primary">View Gallery</a>
             </div>
             <div class="hero-image">
@@ -64,14 +64,14 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            Hues of Old Malaya is a groundbreaking initiative that merges the precision of artificial intelligence with the beauty of historical preservation. Our advanced neural networks are trained to understand the essence of Malaysia's cultural heritage, recoloring black-and-white photographs with hues that echo the vibrancy of the past.
+                            Hues of Old Malaya is a groundbreaking initiative that merges the precision of artificial intelligence with the beauty of historical preservation. Our advanced convolutional neural networks, inspired by the <a href="https://github.com/piddnad/DDColor" target="_blank">DDColor</a> model, was implemented to understand the essence of Malaysia's cultural heritage, recoloring black-and-white photographs with hues that echo the vibrancy of the past.
                         </p>
                         <p>
                             From bustling streets of colonial Malaya to serene kampung landscapes, our AI ensures every detail is revived with authenticity and care. This is more than recolorization—it's a journey through time, where technology meets tradition to rekindle the soul of history.
                         </p>
                     </div>
                     <div class="about-image">
-                        <img src="placeholder-process.jpg" alt="Colorization process visualization" class="placeholder-img">
+                        <img src="colorization_process.JPEG" alt="Colorization process visualization" class="placeholder-img">
                     </div>
                 </div>
             </div>
@@ -85,17 +85,20 @@
                         <div class="tech-icon"><i class="fas fa-brain"></i></div>
                         <h3>Deep Learning</h3>
                         <p>
-                            At the heart of Hues of Old Malaya lies a custom-built GAN (Generative Adversarial Network) architecture, designed to analyze and predict colors with remarkable accuracy. Our AI doesn’t just add color—it interprets the context, ensuring every shade reflects the historical and cultural essence of Malaysia.
+                            At the heart of Hues of Old Malaya lies a custom-built CNN (Convolutional Neural Network) architecture, from the state-of-the-art <a href="https://github.com/piddnad/DDColor" target="_blank">DDColor</a> model. This deep learning algorithm is designed to analyze and predict colors with remarkable accuracy, ensuring that every shade reflects the historical and cultural essence of Malaysia.
                         </p>
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon"><i class="fas fa-eye"></i></div>
                         <h3>Computer Vision</h3>
-                        <p>With cutting-edge computer vision techniques, we preserve intricate details, from the delicate patterns of batik to the vibrant tones of traditional attire. Optimized for speed and precision, our technology delivers breathtaking results in moments, making history accessible to all.</p>
+                        <p>
+                            Using advanced computer vision techniques, we preserve intricate details such as the delicate patterns of batik and the vibrant tones of traditional attire. Our technology is optimized for both speed and precision, delivering breathtaking results that make history accessible to everyone.
+                        </p>
                     </div>
                 </div>
                 <div class="tech-image">
-                    <img src="placeholder-architecture.jpg" alt="Neural network architecture diagram" class="placeholder-img">
+                    <img src="network_arch.jpg" alt="Neural network architecture diagram" class="placeholder-img">
+                    <h4 class="image-description" style="background-color: white; text-align: center;">The neural network architecture used in the DDColor model for colorization.</h4>
                 </div>
             </div>
         </section>
@@ -216,24 +219,24 @@
                             Reach out to us and be part of this journey where AI meets artistry, and history is painted anew.
                         </p>
                         <div class="contact-details">
-                            <p>📧 <a href="mailto:contact@autocolor.ai">contact@autocolor.ai</a></p>
-                            <p>🐦 <a href="https://twitter.com/autocolor" target="_blank">@autocolor</a></p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:fakhrulfauzi02@gmail.com">fakhrulfauzi02@gmail.com</a></p>
+                            <p><i class="fab fa-github"></i> <a href="https://github.com/p1sangmas" target="_blank">@p1sangmas</a></p>
                         </div>
                     </div>
                     <div class="contact-form">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Your Message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        <form action="https://formspree.io/f/mwpoppbw" method="POST">
+                          <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                          </div>
+                          <div class="form-group">
+                            <input type="email" name="_replyto" placeholder="Your Email" required>
+                          </div>
+                          <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
-                    </div>
+                      </div>
                 </div>
             </div>
         </section>
@@ -258,9 +261,9 @@
                 <div class="footer-social">
                     <h4>Follow</h4>
                     <div class="social-icons">
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/p1sangmas" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fakhrul-fauzi/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/fakhrulfauzii?igsh=Y2llNGJreml6bWo0&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

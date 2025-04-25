@@ -88,4 +88,29 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Add this to show a success/error message
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        
+        fetch(this.action, {
+        method: this.method,
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+        })
+        .then(response => {
+        if (response.ok) {
+            this.reset();
+            alert('Message sent successfully!');
+        } else {
+            throw new Error('Network response was not ok');
+        }
+        })
+        .catch(error => {
+        alert('There was a problem sending your message');
+        });
+    });
 });

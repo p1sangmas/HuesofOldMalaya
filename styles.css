@@ -431,6 +431,11 @@ a:hover {
     box-shadow: var(--box-shadow);
 }
 
+.tech-image:hover {
+    transform: translateY(-10px);
+    transition: var(--transition);
+}
+
 /* Gallery section */
 .gallery-container {
     width: 100%;
