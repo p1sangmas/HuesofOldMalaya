@@ -223,7 +223,8 @@ a:hover {
 
 .hero-image {
     flex: 1;
-    max-width: 600px; /* Limit the width of the image */
+    max-width: 100%; /* Limit the width of the image */
+    min-height: 300px; /* Set a minimum height */
     position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -689,6 +690,33 @@ a:hover {
     
     .tech-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .hero-content {
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        width: 100%; 
+        min-height: 250px; 
+        display: block; 
+    }
+
+    .image-slider {
+        min-height: 250px;
+        display: block; 
     }
 }
 
